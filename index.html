@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <!--LINK TO SOME CDN AND LIBRARY-->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -18,9 +18,11 @@
   </head>
   <body>
     <div class="sidebar">
-      <div id="title"> <a id="innerTittle1">Bao Tran</a> <img id="innerTittle2" src="logo.png" alt="Logo" class="logo" /></div>
-      
+      <!--TITLE CLASS-->
+      <div id="title"> <a id="innerTitle1">Bao Tran</a> <a id="innerTitle2"><img id="logo" src="logo.png" alt="Logo"/></a></div>
+      <!--WORKOUT CLASS-->
       <ul class="workouts">
+        <!--INPUTS-->
         <form class="form hidden">
           <div class="form__row">
             <label class="form__label">Type</label>
@@ -56,23 +58,29 @@
           </div>
           <button class="form__btn">OK</button>
         </form>
+        <!--LOCATE ME BUTTON-->
 		    <button class="locateMe hidden">Locate Me</button><br>
 		    <div id="htmlTxt"></div>
-
+        <!--ADDITION BAR FOR MORE INFO-->
         <div class="moreInfo">
+          <!--MORE INFO-->
           <div class="innerInfo"><img id="imgInfo" src="more-info-icon-29.jpg"></div>
+          <!--GMAIL-->
           <div class="innerInfo"><a href="mailto:batr2149@cloud.edu.pe.ca"><img id="gmailInfo" src="gmail_icon_2.png"></a></div>
-          <div class="innerInfo"><a href="https://github.com/" target="_blank"><img id="githubInfo" src="github.png"></a></div>
+          <!--GITHUB-->
+          <div class="innerInfo"><a href="https://github.com/CRHS-CMP621A/mapme-tutorial-BaoTran2149" target="_blank"><img id="githubInfo" src="github.png"></a></div>
         </div>
-        
+        <!--POPUP TEXT DESCRIBING THE WEBSITE CAPABILITIES-->
         <div class="additionTxt hidden">
           <div class="innerTxt"></div>
           <div class="innerTxt"></div>
           <div class="innerTxt"></div>
         </div>
       </ul>
+      <!--POPUP BAR WHEN INVALID INPUT BEGING SUBNMITTED-->
+      <div class="invalidInput hidden">Invalid Input</div>
     </div>
-
+    <!--MAP-->
     <div id='map'></div>
     <script src="script.js"></script>
   </body>
